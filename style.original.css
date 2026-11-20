@@ -6,11 +6,11 @@
     --color-muted: #666666;
     --color-primary: #8b0000;
     --color-heading: #8b0000;
-    --color-header-bg: #8b0000;
+    --color-header-bg: #900303;
     --color-dark: #222222;
     --color-accent: #ffd700;
     --color-border: #eeeeee;
-    --color-placeholder: #dddddd;
+    --color-placeholder: #bbbbbb;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.2);
     --radius: 8px;
@@ -78,10 +78,14 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ===== Header + SVG ===== */
 header {
-    background-color: var(--color-header-bg);
-    color: white;
-    text-align: center;
-    padding: 1.5rem 1rem;
+  background-color: #4a0404;
+  background-image: url("../img/backg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
 header h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }

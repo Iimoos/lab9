@@ -103,11 +103,16 @@ img {
 }
 
 /* ===== Header + SVG ===== */
+
 header {
-  background-color: var(--color-header-bg);
+  background-color: #4a0404;
+  background-image: url("../img/backg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 3rem 1rem;
 }
 
 header h1 {

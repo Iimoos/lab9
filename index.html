@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="style.original.css">
 </head>
 <body>
+   
+
+    
+    
+   
+    
 
     <a class="skip-link" href="#gallery">Галерей руу шууд очих</a>
 
     <!-- Header + inline SVG (уур гарах animation) -->
-    <header>
+    <header style="background-image: url('img/backg.jpg'); background-size:auto 100%; background-repeat:repeat-x; background-position: center; padding: 3rem 1rem;">
+
         <svg class="bowl" viewBox="0 0 120 100" role="img" aria-labelledby="bowlTitle">
-            <title id="bowlTitle">Халуун шөлтэй аяга</title>
+   S         <title id="bowlTitle">Халуун шөлтэй аяга</title>
             <path class="steam s1" d="M40 35 C32 25 48 20 40 8" />
             <path class="steam s2" d="M60 35 C52 25 68 20 60 8" />
             <path class="steam s3" d="M80 35 C72 25 88 20 80 8" />
@@ -48,28 +55,36 @@
     <div class="container">
         <main>
             <div class="food-card">
-                <div class="food-image">Хуушуур</div>
+                <div class="food-image" style="height: 220px; overflow: hidden;">
+                    <img src="img/huushuur.jpg" alt="Хуушуур" loading="lazy" width="100%" height="auto">
+                </div>
                 <div class="food-info">
                     <h3>Монгол Хуушуур</h3>
                     <p>Гар аргаар татсан үхэр, хонины махтай, шаржигнуур амттай уламжлалт хуушуур.</p>
                 </div>
             </div>
             <div class="food-card">
-                <div class="food-image">Бууз</div>
-                <div class="food-info">
+                <div class="food-image" style="height: 220px; overflow: hidden;">
+                    <img src="img/buuz.jpg" alt="Бууз" loading="lazy" width="100%" height="auto">
+                </div>
+                <div class="food-info"style="height: 220px; overflow: hidden;">
                     <h3>Бууз</h3>
                     <p>Баяр ёслолын ширээний гол чимэг, шүүслэг, амтлаг үндэсний бууз.</p>
                 </div>
             </div>
             <div class="food-card">
-                <div class="food-image">Цуйван</div>
+                <div class="food-image" style="height: 220px; overflow: hidden;">
+                    <img src="img/tsuiwan.jpg" alt="Цуйван" loading="lazy" width="100%" height="auto">
+                </div>
                 <div class="food-info">
-                    <h3>Гарын Цуйван</h3>
+                    <h3>Цуйван</h3>
                     <p>Гар аргаар элдсэн гурил, шинэхэн мах, ногоотой хослуулан хуурсан цуйван.</p>
                 </div>
             </div>
             <div class="food-card">
-                <div class="food-image">Шөл</div>
+                <div class="food-image"style="height: 220px; overflow: hidden;">
+                    <img src="img/banshtai_tsai.jpg" alt="Банштай цай" loading="lazy" width="100%" height="auto">
+                </div>
                 <div class="food-info">
                     <h3>Банштай Цай</h3>
                     <p>Сүүтэй цайнд чанасан банш, шар тос, борцоор амталсан алжаал тайлах шөл.</p>
@@ -99,8 +114,7 @@
     <!-- ===== Лаб 6: Зургийн галерей (3D flip card + stagger animation) ===== -->
     <section class="wrapper" id="gallery" aria-labelledby="galleryTitle">
         <h2 id="galleryTitle" class="section-title">Хоолны галерей</h2>
-        <p class="section-note">Зургийг заагчаар дээгүүр нь аваачих эсвэл "Эргүүлэх" товчийг дарж тайлбарыг үзнэ үү.</p>
-
+       
         <div class="gallery">
             <figure class="gallery-item" style="--i:0">
                 <div class="flip-card" id="card1">
@@ -115,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="flip-btn" type="button" aria-pressed="false" aria-controls="card1">Эргүүлэх</button>
+                
             </figure>
 
             <figure class="gallery-item" style="--i:1">
@@ -131,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="flip-btn" type="button" aria-pressed="false" aria-controls="card2">Эргүүлэх</button>
+                
             </figure>
 
             <figure class="gallery-item" style="--i:2">
@@ -147,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="flip-btn" type="button" aria-pressed="false" aria-controls="card3">Эргүүлэх</button>
+                
             </figure>
 
             <figure class="gallery-item" style="--i:3">
@@ -163,7 +177,6 @@
                         </div>
                     </div>
                 </div>
-                <button class="flip-btn" type="button" aria-pressed="false" aria-controls="card4">Эргүүлэх</button>
             </figure>
 
             <figure class="gallery-item" style="--i:4">
@@ -179,9 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="flip-btn" type="button" aria-pressed="false" aria-controls="card5">Эргүүлэх</button>
             </figure>
-
             <figure class="gallery-item" style="--i:5">
                 <div class="flip-card" id="card6">
                     <div class="flip-card-inner">
@@ -195,7 +206,6 @@
                         </div>
                     </div>
                 </div>
-                <button class="flip-btn" type="button" aria-pressed="false" aria-controls="card6">Эргүүлэх</button>
             </figure>
         </div>
     </section>
@@ -245,6 +255,47 @@
 </div>
     </section>
 
+   
+
+    <!-- ===== Лаб 9: Санал хүсэлтийн Form (Дэлгэгддэг) ===== -->
+<section class="wrapper" id="feedback" style="text-align: center; margin-top: 30px; margin-bottom: 40px;">
+  <button type="button" id="toggleFeedbackBtn" style="padding: 12px 24px; font-size: 16px; cursor: pointer; border-radius: 6px;">
+    Санал хүсэлт илгээх ▼
+  </button>
+
+  <form id="feedbackForm" novalidate style="display: none; text-align: left; max-width: 500px; margin: 20px auto 0; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    <div>
+      <label for="name">Нэр:</label><br>
+      <input type="text" id="name" name="name" placeholder="Таны нэр" style="width: 100%; padding: 8px;">
+      <small id="nameError" style="color: red; display: block; margin-top: 4px;"></small>
+    </div>
+
+    <div>
+      <label for="email">Имэйл:</label><br>
+      <input type="email" id="email" name="email" placeholder="email@email.mn" style="width: 100%; padding: 8px;">
+      <small id="emailError" style="color: red; display: block; margin-top: 4px;"></small>
+    </div>
+
+    <div>
+      <label for="password">Нууц үг:</label><br>
+      <input type="password" id="password" name="password" placeholder="Хамгийн багадаа 8 тэмдэгт (үсэг + тоо)" style="width: 100%; padding: 8px;">
+      <small id="passwordError" style="color: red; display: block; margin-top: 4px;"></small>
+    </div>
+
+    <div>
+      <textarea id="message" name="message" rows="4" maxlength="500" placeholder="10–500 тэмдэгт..." style="width: 100%;max-height: 120px;overflow:hidden;resize:none; padding: 8px;"></textarea>
+      <div style="text-align: right; font-size: 12px; color: gray; margin-top: 2px;">
+        <span id="charCount">0</span> / 500
+      </div>
+      <small id="messageError" style="color: red; display: block; margin-top: 4px;"></small>
+    </div>
+
+    <button type="submit" style="padding: 10px; cursor: pointer;">Илгээх</button>
+    <p id="formSuccess" style="color: green; font-weight: bold;"></p>
+  </form>
+</section>
+
+
     <footer>
         <p>&copy; 2026 Монгол Хоолны Вэб Сайт. Бүх эрх хуулиар хамгаалагдсан.</p>
     </footer>
@@ -259,7 +310,9 @@
     <div class="preview-overlay" id="previewOverlay" hidden>
         <iframe id="previewFrame" title="Харагдац урьдчилан харах"></iframe>
     </div>
-
+    <script src="js/algorithms.js"></script>
+    <script src="js/validators.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>

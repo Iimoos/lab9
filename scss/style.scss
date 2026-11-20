@@ -82,11 +82,16 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ===== Header + SVG ===== */
 header {
-    background-color: var(--color-header-bg);
-    color: white;
-    text-align: center;
-    padding: 1.5rem 1rem;
+  background-color: #4a0404;
+  background-image: url("../img/backg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
 }
+
 
 header h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
 header p { font-size: 0.95rem; }
